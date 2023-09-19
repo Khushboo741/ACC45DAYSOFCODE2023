@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin>>N;
+    while(N--){
+        int X,Y,Z;
+        cin>>X>>Y>>Z;
+        int rupees=(X*5+Y*10);
+        int cost=rupees/Z;
+        cout<<cost<<endl;
+        
+    }
+	return 0;
+}
