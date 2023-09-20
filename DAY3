@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+      int T;
+      cin>>T;
+      while(T--){
+          int students;
+          cin>>students;
+          int chairs;
+          cin>>chairs;
+          int MoreChairs=students-chairs;
+          if(students>=chairs){
+          cout<<MoreChairs<<endl;
+          }
+          else{
+                cout<<"0"<<endl;
+          }
+      }
+	return 0;
+}
