@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,b,c=0;
+	    cin>>n>>b;
+	    for(int i=0;i<n;i++){
+	        int w,h,p;
+	        cin>>w>>h>>p;
+	        if(p<=b){
+	            c=max(c,(w*h));
+	        }
+	    }
+	    if(c==0){
+	        cout<<"no tablet"<<endl;
+	    }
+	    else{
+	        cout<<c<<endl;
+	    }
+	}
+	return 0;
+}
