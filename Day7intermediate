@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+        int Pa;
+        int Pb;
+        int Pc;
+        cin>>Pa;
+        cin>>Pb;
+        cin>>Pc;
+        if(Pa+Pc>Pb){
+            cout<<Pa+Pc<<endl;
+        }
+        else{
+            cout<<Pb<<endl;
+        }
+        
+    }
+	
+	return 0;
+}
