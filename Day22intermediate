@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	    double A,B;
+	    cin>>A>>B;
+	    char C;
+	    cin>>C;
+	    switch(C){
+	        case '+':
+	        cout<<A+B<<endl;
+	        break;
+	        case '-':
+	        cout<<A-B<<endl;
+	        break;
+	        case'*':
+	        cout<<A*B<<endl;
+	        break;
+	        case'/':
+	        cout<<fixed<<setprecision(7)<<A/B<<endl;
+	        break;
+	    }
+	
+	return 0;
+}
