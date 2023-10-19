@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a1,b1,a2,b2,a3,b3;
+	    cin>>a1>>a2>>a3>>b1>>b2>>b3;
+	    int a,b;
+	    if (a1>a2 && a1>a3){
+	        if (a2>a3){
+	            a=a1*100+a2*10+a3;
+	        }else{
+	            a=a1*100+a3*10+a2;
+	        }
+	    }else if(a2>a3){
+	        if(a1>a3){
+	            a=a2*100+a1*10+a3;
+	        }else{
+	            a=a2*100+a3*10+a1;
+	        }
+	    }else{
+	        if(a1>a2){
+	            a=a3*100+a1*10+a2;
+	        }else{
+	            a=a3*100+a2*10+a1;
+	        }
+	    }
+	    if (b1>b2 && b1>b3){
+	        if (b2>b3){
+	            b=b1*100+b2*10+b3;
+	        }else{
+	            b=b1*100+b3*10+b2;
+	        }
+	    }else if(b2>b3){
+	        if(b1>b3){
+	            b=b2*100+b1*10+b3;
+	        }else{
+	            b=b2*100+b3*10+b1;
+	        }
+	    }else{
+	        if(b1>b2){
+	            b=b3*100+b1*10+b2;
+	        }else{
+	            b=b3*100+b2*10+b1;
+	        }
+	    }
+	    if (a>b){
+	        cout<<"Alice"<<endl;
+	    }else if (a==b){
+	        cout<<"Tie"<<endl;
+	    }else{
+	        cout<<"Bob"<<endl;
+	    }
+	}
+	return 0;
+}
