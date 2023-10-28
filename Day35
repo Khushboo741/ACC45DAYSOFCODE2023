@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int N;
+	    cin>>N;
+	    int ans=0,count=0;
+	    if(N==1){
+	        cout<<0<<endl;
+	    }
+	   else if(N>1 && N<9){
+	        cout<<1<<endl;
+	       
+	    }
+	    
+	    else{
+	    for(int i=3;i<=N;i++){
+	        count++;
+	        if(count==7){
+	            ans++;
+	            count=0;
+	        }
+	        
+	    }
+	    cout<<ans+1<<endl;
+	    }
+	}
+	return 0;
+}
