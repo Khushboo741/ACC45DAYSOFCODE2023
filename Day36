@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int X,Y;
+	    cin>>X>>Y;
+	    int result=(X+Y)%4;
+	    if(result==0|| result==1){
+	        cout<<"Alice"<<endl;
+	    }
+	    else {
+	        cout<<"Bob"<<endl;
+	    }
+	}
+	return 0;
+}
