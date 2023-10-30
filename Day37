@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    float N,M;
+	    cin>>N>>M;
+	    float result=N-(0.1*N);
+	    if(result<M){
+	        cout<<"ONLINE"<<endl;
+	    }
+	   
+	    else if(result>M){
+	        cout<<"DINING"<<endl;
+	    }
+	     else if(result==M){
+	        cout<<"EITHER"<<endl;
+	}
+	}
+	return 0;
+}
