@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	    int X;
+	    int Y;
+	    cin>>X>>Y;
+	    int result=(Y/2)+(X-Y);
+	   cout<<result<<endl;
+
+	return 0;
+}
