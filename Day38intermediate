@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int N;
+	    int A;
+	    int B;
+	    cin>>N>>A>>B;
+	    string S;
+	    int countA=0,countB=0;
+	    for(int i=0;i<n;i++){
+	        if(s[i]=='0'){
+	            countA++;
+	        }
+	        else{
+	            countB++;
+	        }
+	    }
+	}
+	return 0;
+}
